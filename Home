@@ -10,5 +10,17 @@
 </head>
 
 <body>
-   d 
+   <section>
+      <nav>
+         <div class="logo">
+            <img src="./assets/AH_Logo.svg" alt="logo" />
+         </div>
+         <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact</a>
+         </div>
+      </nav>
+   </section>
 </body>
