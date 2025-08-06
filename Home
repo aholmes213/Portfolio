@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Portfolio</title>
+<link rel="stylesheet" href="./style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -10,11 +11,11 @@
 </head>
 
 <body>
-   <section>
+   <section class="header">
+      <div class="logo">
+         <img src="./assets/AH_Logo.svg" alt="logo" />
+      </div>
       <nav>
-         <div class="logo">
-            <img src="./assets/AH_Logo.svg" alt="logo" />
-         </div>
          <div class="links">
             <a href="#">Home</a>
             <a href="#">Portfolio</a>
@@ -22,5 +23,43 @@
             <a href="#">Contact</a>
          </div>
       </nav>
+      <div class="title">
+         <h1>Content Designer</h1>
+         <h2>20+ Years of Experience</h2>
+      </div>
    </section>
+   <section class="secQuote">
+      <div class="quote">
+         <h3>I don’t just build eLearning — I engineer clarity.</h3>
+         <p>From concept to execution, I design training that’s intuitive, visually sharp, and performance-focused. When learning is seamless, results follow.</p>
+      </div> 
+   </section>
+   <section class="testimonials">
+      <div class="heading">
+         <h4>TESTIMONIALS</h4>
+         <img src="https://images.pexels.com/photos/1422286/pexels-photo-1422286.jpeg" alt="Laptop1" class="testLaptop"/>
+      </div>
+      <div class="testContainer">
+         <div class="box" id="test1">
+            <p>
+               Beyond simply ensuring accuracy, Andrew's work was thoughtfully designed. He consistently brought an instructional designer's mindset to his tasks, translating policy into engaging training solutions, optimizing the user experience, and proactively aligning learning initiatives with key operational outcomes. Whether leading evaluation cycles, developing performance-based training materials, or coordinating across various units, Andrew consistently elevated the standard of excellence.
+               <br><br>
+               <span style="display: block; text-align: right;"> - Charles Miller, CEO 18 FSS</span>
+            </p>
+         </div>
+         <div class="box" id="test2">
+            <p>
+               It was a pleasure to work with Andrew on the DAF Training Course rebuild. I was impressed with Andrew’s focus on the Interactive Student Handbook and supplemental eLearning modules. He remained committed to ensuring the highest quality outcome for the project. 
+               <br><br>
+               The updated DAF Training Course now serves as a valuable resource for approximately 3,000 training managers worldwide. Early indications suggest the course has become more inclusive, ensuring a wider range of perspectives are considered. This version shows signs of actively incorporating the perspectives of Air Force Reserve, Guard, and Space Force personnel. Andrew's contributions were a valuable part of this critical update.
+               <br><br>
+               <span style="display: block; text-align: right;"> - Emily Lapeyrouse, Training Management ISC</span>
+            </p>
+         </div>
+         <div class="box" id="test2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         </div>
+      </div>
+   </section>
+
 </body>
