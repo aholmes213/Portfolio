@@ -11,12 +11,14 @@ html, body{
 
 .header{
     height: 20rem;
-    background: salmon;
-    background-image: url(./assets/homeBackground.jpg);
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.home{
+    background-image: url(./assets/homeBackground.jpg);
+    background-position: center;    
 }
 .logo img{
     width: 4.5rem;
@@ -72,6 +74,7 @@ a{
         display: block;
     }
 }
+/* *****End Responsive behavior***** */
 
 .title{
     text-align: center;
@@ -144,4 +147,33 @@ a{
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
+}
+
+/* *****About Me***** */
+.about {
+    background: #86E0FF;
+    background-image: url(./assets/aboutBackgound.png);
+    background-position: center;
+    background-size: cover;
+}
+.headshotContainer{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100rem;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    position: absolute;
+    top: 15rem;
+    border: solid white .5rem;
+}
+.text {
+    margin-top: 12rem;
+}
+.paraContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
 }
