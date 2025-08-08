@@ -169,11 +169,12 @@ a{
 }
 .text {
     margin-top: 12rem;
-}
-.paraContainer {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 80%;
+}
+.paraContainer {
+    display: flex;
+    width:80%;
+    margin: auto;
 }
