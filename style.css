@@ -172,9 +172,11 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
 }
 .paraContainer {
     display: flex;
     width:80%;
     margin: auto;
+
 }
