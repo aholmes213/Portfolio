@@ -100,7 +100,6 @@ a{
 .quote h3{
     margin-bottom: 2rem;
 }
-
 .heading{
     height: 8rem;
     background: #FF9990;
@@ -147,6 +146,13 @@ a{
     align-items: center;
     justify-content: flex-start;
     padding: 1rem;
+}
+.quoteIcon {
+    font-size: 5rem;
+    color: #FF9990;
+    margin-left: 1rem;
+    font-family: "Alex Brush", cursive;
+
 }
 
 /* *****About Me***** */
