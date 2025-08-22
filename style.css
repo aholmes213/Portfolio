@@ -269,5 +269,21 @@ a{
 .Example:hover .image {
     transform: translateY(-3rem) scale(0.8);
 }
+.Example p,
+.Example button {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+@media (hover: none) and (pointer: coarse) {
+    .Example p,
+    .Example button {
+        opacity: 1;
+        transform: translateY(8rem);
+  }
+
+    .image {
+        transform: translateY(-3rem) scale(0.8);
+  }
+}
+
 
 /* *****End PortfolioHome***** */
