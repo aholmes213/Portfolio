@@ -208,4 +208,66 @@ a{
     font-family: 'Segoe Fluent Icons';
     font-size: 24px;
 }
+.portContainer{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.Example{
+    height: 25rem;
+    width: 25rem;
+    background: white;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+.image{
+    height: 20rem;
+    border-radius: 2rem;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+}
+.Example p{
+    padding-top: 2rem;
+    position: relative;
+    transform: translateY(10rem);
+    transition: 0.5s all;
+    opacity: 0;
+    pointer-events: none;
+}
+.Example button{
+    border: none;
+    background: #104862;
+    color: #D8CAB8;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    position: relative;
+    opacity: 0;
+    transition: 0.5s all;
+    transform: translateY(10rem);
+}
+.Example:hover p, .Example:hover button {
+    opacity: 1;
+    transform: translateY(8rem);
+}
+.Example:hover .image {
+    transform: translateY(-3rem) scale(0.8);
+}
+
 /* *****End PortfolioHome***** */
