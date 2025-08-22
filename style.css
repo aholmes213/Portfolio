@@ -213,7 +213,6 @@ a{
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    overflow: hidden;
 }
 .Example{
     height: 25rem;
@@ -229,6 +228,7 @@ a{
     justify-content: center;
     padding: 1rem;
     position: relative;
+    overflow: hidden;
 }
 .image{
     height: 20rem;
