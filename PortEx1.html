@@ -7,7 +7,10 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./lightbox.css">
+    <link rel="stylesheet" href="./lightbox.min.css">
     <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./lightbox.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -81,16 +84,16 @@
     </section>
     <section class="screenshots" id="screenshots1">
         <div class="cfetpShot1">
-            <img src="./assets/cfetpShot1.jpg" class="img1" alt="img1"/>
+            <a href="./assets/cfetpShot1.jpg" data-lightbox="gallery"><img src="./assets/cfetpShot1.jpg" class="img1" alt="img1"/></a>
         </div>
         <div class="cfetpShot2">
-            <img src="./assets/cfetpShot2.png" alt="img2" class="img2"/>
+            <a href="./assets/cfetpShot2.png"><img src="./assets/cfetpShot2.png" alt="img2" class="img2"/></a>
         </div>
         <div class="cfetpShot3">
-            <video class="cfetpVideo" controls muted playsinline>
-                <source src=".assets/cfetpShot3.mp4" type="mp4" />
+            <a href="./assets/cfetpShot3.mp4"><video class="cfetpVideo" controls muted playsinline>
+                <source src="./assets/cfetpShot3.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
+            </video></a>
         </div>
     </section>
 </body>

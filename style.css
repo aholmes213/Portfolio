@@ -370,12 +370,15 @@ li::before {
     height: 20rem;
     width: 20rem;
     overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+
 }
-.screenshots img{
+.screenshots img, .screenshots img{
     object-fit: cover;
     display: block;
     height: 100%;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
 }
+
+
 /* *****End PortEx1***** */
