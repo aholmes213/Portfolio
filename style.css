@@ -366,18 +366,44 @@ li::before {
     flex-wrap: wrap;
     gap: 2rem
 }
-.cfetpShot1, .cfetpShot2, .cfetpShot3{
+.cfetpShot{
     height: 20rem;
     width: 20rem;
     overflow: hidden;
     border-radius: 2rem;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
-
+    cursor: pointer;
 }
 .screenshots img, .screenshots img{
     object-fit: cover;
     display: block;
     height: 100%;
+}
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: .2rem;
+    background-color: black;
+    border: 2px solid white;
+}
+.lightbox-media {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 1rem;
 }
 
 

@@ -7,31 +7,43 @@ function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("active");
 }
 
-const mediaItems = [
-  '<img src="./assets/cfetpShot1.jpg" alt="Screenshot 1">',
-  '<img src="./assets/cfetpShot2.png" alt="Screenshot 2">',
-  '<video autoplay muted controls><source src="./assets/cfetpShot3.mp4" type="video/mp4"></video>'
-];
+// ********** Lightbox **********
 
-let currentIndex = 0;
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+document.body.appendChild(lightbox);
 
-function openLightbox(index) {
-  currentIndex = index;
-  document.getElementById('lightboxContent').innerHTML = mediaItems[index];
-  document.getElementById('lightbox').style.display = 'flex';
-}
+const items = document.querySelectorAll('.screenShot');
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    lightbox.classList.add('active');
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild);
+    }
 
-function closeLightbox() {
-  document.getElementById('lightbox').style.display = 'none';
-  document.getElementById('lightboxContent').innerHTML = '';
-}
+    const type = item.dataset.type;
+    const src = item.dataset.src || item.src;
+    let content;
 
-function nextItem() {
-  currentIndex = (currentIndex + 1) % mediaItems.length;
-  openLightbox(currentIndex);
-}
+    if (type === 'video') {
+      content = document.createElement('video');
+      content.src = src;
+      content.controls = true;
+      content.autoplay = true;
+      content.muted = true;
+      content.playsInline = true;
+    } else {
+      content = document.createElement('img');
+      content.src = src;
+    }
 
-function prevItem() {
-  currentIndex = (currentIndex - 1 + mediaItems.length) % mediaItems.length;
-  openLightbox(currentIndex);
-}
+    content.classList.add('lightbox-media');
+    lightbox.appendChild(content);
+  });
+});
+
+lightbox.addEventListener('click', e => {
+  if (e.target !== e.currentTarget) return;
+  lightbox.classList.remove('active');
+  lightbox.innerHTML = '';
+});
