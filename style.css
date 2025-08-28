@@ -297,7 +297,7 @@ a{
 .aboutImage, .txtContainer {
     flex: 1;
 }
-.cfetpMain {
+.exampleMain {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -364,9 +364,11 @@ li::before {
     align-items: flex-start;
     height: 20rem;
     flex-wrap: wrap;
-    gap: 2rem
+    gap: 2rem;
+    margin-top: 1rem;
+
 }
-.cfetpShot{
+.exampleShot{
     height: 20rem;
     width: 20rem;
     overflow: hidden;
@@ -378,6 +380,7 @@ li::before {
     object-fit: cover;
     display: block;
     height: 100%;
+    width: 100%;
 }
 #lightbox {
     position: fixed;
