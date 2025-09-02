@@ -39,6 +39,7 @@ html, body{
     top: 0;
     margin: 2rem;
     display: flex;
+    transition: all 0.3s ease-in-out;
 }
 a{
     margin-left: 2rem;
@@ -54,25 +55,123 @@ a{
     position: absolute;
     top: 1rem;
     right: 1rem;
+    padding: 0.5rem;
+    z-index: 1001;
 }
 
 /* *****Responsive behavior***** */
 @media (max-width: 768px) {
-    .links {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        padding: 1rem;
-        position: absolute;
-        top: 3rem;
-        right: 1rem;
-    }
-    .links.active {
-        display: flex;
-    }
-    .hamburger{
-        display: block;
-    }
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .title p {
+    font-size: 1.2rem;
+  }
+
+  .secQuote .quote h3 {
+    font-size: 1.2rem;
+  }
+
+  .secQuote .quote p {
+    font-size: 1rem;
+  }
+
+  .testimonials .heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testLaptop {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .testContainer {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .box {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .quoteIcon {
+    font-size: 2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 1rem;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    width: 100%;
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.3);
+  }
+
+  .links.active {
+    display: flex;
+  }
+  a {
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    margin-left: 0; /* remove left margin so links stack cleanly */
+    display: block;
+    color: #D8CAB8;
+  }
+    .headshotContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.headshot {
+  width: 60%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/* Text section */
+.text {
+  padding: 1rem;
+}
+
+.paraContainer p {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.5rem;
+}
+  /* Quote section */
+  .secQuote.port {
+    padding: 1rem;
+  }
+
+  .quote.port h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .quote.port p {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 /* *****End Responsive behavior***** */
 
@@ -206,7 +305,7 @@ a{
 }
 .portQuoteIcon{
     font-family: 'Segoe Fluent Icons';
-    font-size: 24px;
+    font-size: 3rem;
 }
 .portContainer{
     display: flex;
@@ -322,7 +421,7 @@ a{
     margin: 2rem;
 }
 .detailsHead, .toolsHead, .skillsHead {
-    font-size: 22px;
+    font-size: 3rem;
     font-weight: bold;
     display: flex;
     justify-content: left;
